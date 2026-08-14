@@ -29,5 +29,6 @@ public class Basics {
     }
 
     scanner.close();
+    // main() closes here — everything is inside it
     }
 }
