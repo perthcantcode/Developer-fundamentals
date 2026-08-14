@@ -31,6 +31,7 @@ public class Basics {
 
     System.out.println(); // just moves to a new line after the loop
 
+     // Repeats WHILE a condition is true, checked before each run
     int count = 1;
     System.out.print("Counting up to 5 using a while loop: ");
     while(count <= 5){
