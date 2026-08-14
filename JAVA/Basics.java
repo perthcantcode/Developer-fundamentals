@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Basics {
     public static void main(String[] args) {
+        // Scanner reads input typed by the user in the Terminal
         Scanner scanner = new Scanner(System.in);
         
         //Variables diff data types
@@ -27,6 +28,8 @@ public class Basics {
     for(int i=age;  i>= 1; i--){
         System.out.print(i);
     }
+
+    System.out.println(); // just moves to a new line after the loop
 
     scanner.close();
     // main() closes here — everything is inside it
