@@ -14,7 +14,7 @@ public class Basics {
         System.out.print("Enter your age: ");
         age = scanner.nextInt();
 
-        
+        //Using the variables
         System.out.print("Hello " + name + " you are " + age + " years old");
 
         //Conditionals
