@@ -31,6 +31,13 @@ public class Basics {
 
     System.out.println(); // just moves to a new line after the loop
 
+    int count = 1;
+    System.out.print("Counting up to 5 using a while loop: ");
+    while(count <= 5){
+        System.out.print(count);
+        count++;
+    }
+
     scanner.close();
     // main() closes here — everything is inside it
     }
