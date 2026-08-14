@@ -17,9 +17,13 @@ public class Basics {
         //Using the variables
         System.out.print("Hello " + name + " you are " + age + " years old");
 
-        //Conditionals
+        //Conditionals (if-else)
 
-        if(age<=18){System.out.printLn("You are a minor");}
-        else{System.out.printLn("You are an adult");}
+        if(age<=18){System.out.println("You are a minor");}
+        else{System.out.println("You are an adult");}
     }
+
+    //Loops (for loops)
+    System.out.println("Coounting down from " + age + " to 1 :");
+
 }
