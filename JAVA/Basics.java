@@ -39,6 +39,15 @@ public class Basics {
         count++;
     }
 
+    //DATA TYPES
+    int wholeNum = 10;
+    double decimalNum = 10.15;
+    char letter = 'R';
+    boolean isJavaFun = true;
+    String text = "Hello Lord";
+    
+
+
     scanner.close();
     // main() closes here — everything is inside it
     }
