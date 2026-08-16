@@ -55,7 +55,19 @@ public class Basics {
     System.out.println("String: " + text);
     System.out.println();
 
+     // ================================================================
+        // 2. ARITHMETIC OPERATORS
+        // ================================================================
+        // + - * / are what you'd expect. % is "modulo" — the REMAINDER
+        // after division. Very useful for checking even/odd, cycles, etc.
+        int a = 17, b = 5;
 
+        System.out.println("=== ARITHMETIC OPERATORS ===");
+        System.out.println("a + b = " + (a + b)); // 22
+        System.out.println("a - b = " + (a - b)); // 12
+        System.out.println("a * b = " + (a * b)); // 85
+        System.out.println("a / b = " + (a / b)); // 3  <-- int / int = int (truncates!)
+        System.out.println("a % b = " + (a % b)); // 2  <-- remainder
 
     scanner.close();
     // main() closes here — everything is inside it
