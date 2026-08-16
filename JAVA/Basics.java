@@ -39,13 +39,22 @@ public class Basics {
         count++;
     }
 
-    //DATA TYPES
+    //DATA TYPES\
+    //Java is statically typed which is every variable must declare its own type 
+    //and that type  never changes.
     int wholeNum = 10;
     double decimalNum = 10.15;
     char letter = 'R';
     boolean isJavaFun = true;
     String text = "Hello Lord";
-    
+
+    System.out.println("=== Data Types ===");
+    System.out.println("Int: " + wholeNum);
+    System.out.println("char: " + letter);
+    System.out.println("boolean: " + isJavaFun);
+    System.out.println("String: " + text);
+    System.out.println();
+
 
 
     scanner.close();
