@@ -69,6 +69,28 @@ public class Basics {
         System.out.println("a / b = " + (a / b)); // 3  <-- int / int = int (truncates!)
         System.out.println("a % b = " + (a % b)); // 2  <-- remainder
 
+
+        // Important gotcha: dividing two ints drops the decimal part.
+        // To get a precise decimal result, at least one number must be a double.
+        double preciseDivision = (double) a / b; // (double) "casts" a to a decimal
+        System.out.println("Precise a / b = " + preciseDivision); // 3.4
+        System.out.println();
+
+        // ================================================================
+        // 3. FORMATTING NUMBERS (two decimal places, spacing)
+        // ================================================================
+        // printf lets you control exactly how output looks.
+        // %.2f  = format as a decimal (f) with exactly 2 digits after the point
+        // %5d   = format as an integer (d), padded to take up 5 characters wide
+        // \n    = newline (printf doesn't auto-add one like println does)
+        System.out.println("=== FORMATTING ===");
+        System.out.printf("Two decimal places: %.2f%n", preciseDivision); // 3.40
+        System.out.printf("Padded number: [%5d]%n", 42);   // [   42]
+        System.out.printf("Left-aligned:  [%-5d]%n", 42);  // [42   ]
+        System.out.printf("%s is %d years old and %.1f meters tall.%n", "Alex", 20, 1.75);
+        System.out.println();
+
+        
     scanner.close();
     // main() closes here — everything is inside it
     }
