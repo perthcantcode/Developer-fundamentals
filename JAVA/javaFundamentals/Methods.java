@@ -94,6 +94,12 @@ public class Methods {
         System.out.println(add3(5.5,4.9,7.1));
 
 
+        // CHALLENGE #4 : SUMMATION OF NUMBERS
+        int numbers[] = {1,2,3,4,5};
+
+        int result = summation(numbers); // no need na gawing summation(numbers[]);
+        System.out.println("Result  : " + result);
+
     }
 
     static void sayHi(){
@@ -181,4 +187,17 @@ public class Methods {
         return num1 + num2 + num3;
     }
 
-}   
+    static int summation(int numbers[]){
+        int sum = 0; // initialize, para dito mastore totall sum ng loop
+
+        //use for each loop for simplicity sake
+        //"For each item in the numbers array, temporarily call it number,
+        //  and run the loop body with that value."
+        for(int i: numbers){
+            sum += i;
+        }
+
+        return sum; // ito need ma return or output
+    }
+
+}
