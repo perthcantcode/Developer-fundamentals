@@ -52,6 +52,7 @@ public class ConditionalStatements {
         //Logical Operators && -> And  || -> OR  ! -> NOT (babaliktarin)
         */
 
+        /* 
         Scanner s = new Scanner(System.in);
         boolean hasPen = false;
         boolean hasPaper = true;
@@ -61,13 +62,42 @@ public class ConditionalStatements {
         else System.out.println("Go home bud");
 
         System.out.println();
-        
+
         int age = 18;
         boolean isVerif = true;
 
         if(age >= 18 && isVerif) System.out.println("You have access and qualified");
         else if(age >= 18 && !isVerif) System.out.println("You have access but not qualified !");
         else System.out.println("Access Denied !");
+        */
+
+
+        //Grade Average Program
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Grade 1st Quarter  : ");
+        float Q1 = sc.nextFloat();
+        System.out.print("Grade 2nd Quarter  : ");
+        float Q2 = sc.nextFloat();
+        System.out.print("Grade 3rd Quarter  : ");
+        float Q3 = sc.nextFloat();
+        System.out.print("Grade 4th Quarter  : ");
+        float Q4 = sc.nextFloat();
+
+        float average = (Q1 + Q2 + Q3 + Q4) / 4 ;
+
+        System.out.println();
+        System.out.println("Average   :  " + average);
+
+        if(average > 100 ){
+            System.out.println("Invalid Grade");
+        }else if(average <= 100){
+            if(average >= 98) System.out.println("With Highest Honors");
+            else if(average >= 95) System.out.println("With High Honors");
+            else if(average >= 90) System.out.println("With Honors");
+            else if (average >= 75) System.out.println("Passed");
+            else System.out.println("Failed");
+        }
 
     }
 }
