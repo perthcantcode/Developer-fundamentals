@@ -2,6 +2,7 @@ package javaFundamentals;
 import java.util.Scanner;
 public class ConditionalStatements {
     public static void main(String[] args) {
+        /* 
         Scanner scan = new Scanner(System.in);
         
         System.out.print("Enter Age: ");
@@ -33,12 +34,20 @@ public class ConditionalStatements {
 
             if(isVerified)System.out.println("You are Qualified !");
             else System.out.println("Not Qualified");
-            
-
-
         }
+        scan.close();
+        */
 
+        //Equals function -> to compare variables ( == )
+        //content yung cinocompare nya hindi memory address .equals kapag word
 
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter greetings: ");
+        String greet = scan.nextLine();
+        if(greet.equals("Kumusta")) System.out.println("Ayos lang !");
+        else System.out.println("Nudaw?");
+
+        //.equalsIgnoreCase()
 
 
         
