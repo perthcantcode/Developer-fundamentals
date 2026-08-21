@@ -36,5 +36,7 @@ public class VariablesAndDataTypes {
         System.out.println("My GPA is " + gpa);
         System.out.println("My blood type is " + bt);
         //System.out.print()
+
+        
     }
 }
