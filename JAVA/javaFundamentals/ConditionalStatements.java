@@ -39,18 +39,35 @@ public class ConditionalStatements {
         */
 
         //Equals function -> to compare variables ( == )
-        //content yung cinocompare nya hindi memory address .equals kapag word
+        //content yung cinocompare nya hindi memory address .equals kapag word      
 
+        /* 
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter greetings: ");
         String greet = scan.nextLine();
-        if(greet.equals("Kumusta")) System.out.println("Ayos lang !");
+        if(greet.equalsIgnoreCase("Kumusta")) System.out.println("Ayos lang !");
         else System.out.println("Nudaw?");
 
         //.equalsIgnoreCase()
+        //Logical Operators && -> And  || -> OR  ! -> NOT (babaliktarin)
+        */
 
+        Scanner s = new Scanner(System.in);
+        boolean hasPen = false;
+        boolean hasPaper = true;
 
+        if(hasPen && hasPaper) System.out.println("You can join the class !");
+        else if(hasPen || hasPaper) System.out.println(" are not allowed to come in");
+        else System.out.println("Go home bud");
+
+        System.out.println();
         
+        int age = 18;
+        boolean isVerif = true;
+
+        if(age >= 18 && isVerif) System.out.println("You have access and qualified");
+        else if(age >= 18 && !isVerif) System.out.println("You have access but not qualified !");
+        else System.out.println("Access Denied !");
 
     }
 }
