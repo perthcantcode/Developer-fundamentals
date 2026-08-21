@@ -46,6 +46,21 @@ public class Methods {
 
     
         //ARGUMENT & PARAMETERS
+        //value that needs to be passed on a method
+        //that the method can use the value and perform various operations on it
+        // PS  you can have many Arg / Para as u want. They act as a Local Var inside a method/.function
+
+        //Method w/ Arguments
+        //-> modifiers returntype 
+        
+
+        String a = "Ruperth";
+        print("Hello " + a);
+
+        add(5,5);
+        bati("Perth", 19); // Ordering is important no matter what the data type
+        //inside a parameter is.
+
 
     }
 
@@ -69,6 +84,19 @@ public class Methods {
 
     static void sayNumber(){
         System.out.println(num);
+    }
+
+    static void print(String word){ // mag aact sya as taga  print since 1 parameter lang sya
+        System.out.println(word);// pwede sya gamitin sa ibang methods
+    }// e.g. gamitin sya sa bati(); method
+
+    static void add(int num1, int num2){
+        System.out.println(num1 + num2);
+    }
+
+    static void bati(String name, int age){
+        print("Hellow " + name ); // considered as 1 String dahil sa "  "
+        print("You are "+ age + " years old");
     }
 
 }
