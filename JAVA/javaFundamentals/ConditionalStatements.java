@@ -22,7 +22,24 @@ public class ConditionalStatements {
 
         //can remove curly braces {} if one liner lang conditions 
 
+        //Nested Conditional Statement -> use to have check point
+        System.out.print("Enter new age: ");
+        int age1 = scan.nextInt();
         
+        boolean isVerified = false; // if true then you have access abd qualified
+
+        if(age1 >= 18){
+            System.out.println("You have access !");
+
+            if(isVerified)System.out.println("You are Qualified !");
+            else System.out.println("Not Qualified");
+            
+
+
+        }
+
+
+
 
         
 
