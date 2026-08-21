@@ -36,5 +36,17 @@ public class Arrays {
         employeeNames[0] = s.nextLine();
         System.out.println(employeeNames[0]);
 
+        //Challenge 3: Paired Arrays By Index
+        //int index[] = {0,1,2};
+        String email[] = {"ruperthayvesina1323@gmail.com", "m1lixxstratos@gmail.com", "pepitomanaloto453@gmail.com"};
+        String usern[] = {"kwan", "kratos","pits"};
+        String passw[] = {"blk13Lot23", "PoGIIaKU123:)","P3ng3H@td0g"};
+
+        int index = 2; // sya na mag aaccess sa index ng lahat if generalize ang pag access ng Arrays
+
+        System.out.println("Index    : " + index );
+        System.out.println("Email    : " + email[index]);
+        System.out.println("Username : " + usern[index]);
+        System.out.println("Password : " + passw[index]);
     }
 }
