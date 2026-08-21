@@ -85,6 +85,15 @@ public class Methods {
         
         System.out.println(isLegalAge(17));
 
+        //OVERLOADING Methods
+        //same method name but diff parameters
+        //Duplicate methods and iba iba paramters
+
+        System.out.println(add2(5,5));
+        System.out.println(add3(5,5,5));
+        System.out.println(add3(5.5,4.9,7.1));
+
+
     }
 
     static void sayHi(){
@@ -160,4 +169,16 @@ public class Methods {
         else return false;
     }
 
-}
+    static int add2(int num1, int num2){
+        return num1 + num2;
+    }
+
+    static int add3(int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
+
+    static double add3(double num1, double num2, double num3){
+        return num1 + num2 + num3;
+    }
+
+}   
