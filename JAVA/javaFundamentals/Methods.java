@@ -62,6 +62,29 @@ public class Methods {
         //inside a parameter is.
 
 
+        //RETURN KEYWORD
+        //to get the value or result mismo ng method
+        //used when method has a result
+
+        //RETURN TYPE
+        //type of value na marereturn
+        // void returns nothing
+        // int = integers, string = strings .. so on
+
+        int sum = addition(2,2);
+        int difference = subtract(2,2);
+        int product = multiply(2,2);
+        int quotient = divide(2,2);
+        int remainder = modulus(2,2);
+
+        System.out.println(sum);
+        System.out.println(difference);
+        System.out.println(product);
+        System.out.println(quotient);
+        System.out.println(remainder);
+        
+        System.out.println(isLegalAge(17));
+
     }
 
     static void sayHi(){
@@ -97,6 +120,44 @@ public class Methods {
     static void bati(String name, int age){
         print("Hellow " + name ); // considered as 1 String dahil sa "  "
         print("You are "+ age + " years old");
+    }
+
+    static int addition(int num1, int num2){ // wala ng void kasi may nirereturn na
+        return num1 + num2;
+    }
+
+    static int subtract(int num1, int num2){
+        return num1 - num2;
+    }
+
+    static int multiply(int num1, int num2){
+        return num1 * num2;
+    }
+
+    static int divide(int num1, int num2){
+        return num1 / num2;
+    }
+
+    static int modulus(int num1, int num2){
+        int  quotient = divide(num1, num2);
+        int remainder = num1 % num2;
+
+        //check if there's a remainder 
+        if(remainder == 0) System.out.println(num1 + " divides evenly by " + num2 + " (no remainder)");
+        else System.out.println(num1  + " / " + num2 + " has a remainder: " + remainder);
+
+        //check if EVEN | ODD
+        if(remainder % 2 == 0) System.out.println("The quotient (" + quotient + ") is EVEN. ");
+        else System.out.println("The quotient ( " + quotient + ") is ODD.");
+
+
+        //eto yung need ma result sa method nato which is remainder irereturn
+        return remainder;
+    }
+
+    static boolean isLegalAge( int age){
+        if(age >= 18) return true;
+        else return false;
     }
 
 }
