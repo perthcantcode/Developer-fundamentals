@@ -71,7 +71,15 @@ public class SwitchCase {
                 System.out.println("Febuary " + date + ", " + year);
                 break;
             case 3:
-                System.out.println();
+                System.out.println("March " + date + ", " + year);
+                break;
+            case 4:
+                System.out.println("April  " + date + ", " + year);
+                break;
+            case 5:
+                System.out.println(:"May " + date + ", " + year);
+                break;
+            case 6:
         }
 
     }
