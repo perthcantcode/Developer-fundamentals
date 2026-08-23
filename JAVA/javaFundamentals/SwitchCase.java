@@ -20,5 +20,19 @@ public class SwitchCase {
             default:
                 System.out.println("Invalid Grade");
         }
+
+        String stats = "admin";
+
+        switch(stats){
+            case "admin":
+                System.out.println("Hi, Admin");
+                break;
+            case "user":
+                System.out.println("Hi, user");
+                break;
+            default:
+                System.out.println("Invalid ");
+        }
+
     }
 }
