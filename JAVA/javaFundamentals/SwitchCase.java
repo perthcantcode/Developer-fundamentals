@@ -63,8 +63,9 @@ public class SwitchCase {
         int year = sc.nextInt();sc.nextLine();
 
         System.out.println();
-        System.out.println("===================");System.out.println();
+        System.out.println("===================");
         System.out.println("DATE FORMATTER USING SWITCH");
+        System.out.println("===================");System.out.println();
 
         switch(month){
             case 1:System.out.println("January " + date + ", " + year);break;
