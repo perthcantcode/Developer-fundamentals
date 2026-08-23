@@ -34,5 +34,33 @@ public class SwitchCase {
                 System.out.println("Invalid ");
         }
 
+        int level = 1;
+
+        switch(level){
+            case 1 :
+                System.out.println("Beginner");
+                break;
+            case 2:
+                System.out.println("Intermidiate");
+            case 3:
+                System.out.println("Pro");
+                break;
+            default:
+                System.out.println("Noob");
+        }
+
+        //CHALLENGE #4 DATE FORMATTER
+
+        System.out.println("Enter Month : ");
+        int month = sc.nextInt();
+
+        System.out.println("Enter Date: ");
+        int date = sc.nextInt();
+
+        System.out.println("Enter Year: ");
+        int year = sc.nextInt();
+
+        
+
     }
 }
