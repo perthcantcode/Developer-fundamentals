@@ -54,14 +54,16 @@ public class SwitchCase {
         //CHALLENGE #4 DATE FORMATTER
 
         System.out.print("Enter Month : ");
-        int month = sc.nextInt();
+        int month = sc.nextInt();sc.nextLine();
 
         System.out.print("Enter Date  : ");
-        int date = sc.nextInt();
+        int date = sc.nextInt();sc.nextLine();
 
         System.out.print("Enter Year  : ");
-        int year = sc.nextInt();
+        int year = sc.nextInt();sc.nextLine();
 
+        System.out.println();
+        System.out.println("===================");System.out.println();
 
         switch(month){
             case 1:System.out.println("January " + date + ", " + year);break;
