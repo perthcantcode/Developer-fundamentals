@@ -7,6 +7,7 @@ public class SwitchCase {
         Scanner sc = new Scanner(System.in);
         char grade = 'A';
 
+        /* 
         switch(grade){
             case 'A' :
                 System.out.println("Outstanding");
@@ -49,18 +50,29 @@ public class SwitchCase {
                 System.out.println("Noob");
         }
 
+        */
         //CHALLENGE #4 DATE FORMATTER
 
-        System.out.println("Enter Month : ");
+        System.out.print("Enter Month : ");
         int month = sc.nextInt();
 
-        System.out.println("Enter Date: ");
+        System.out.print("Enter Date: ");
         int date = sc.nextInt();
 
-        System.out.println("Enter Year: ");
+        System.out.print("Enter Year: ");
         int year = sc.nextInt();
 
-        
+
+        switch(month){
+            case 1:
+                System.out.println("January " + date + ", " + year);
+                break;
+            case 2:
+                System.out.println("Febuary " + date + ", " + year);
+                break;
+            case 3:
+                System.out.println();
+        }
 
     }
 }
