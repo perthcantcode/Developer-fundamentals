@@ -48,5 +48,6 @@ public class Arrays {
         System.out.println("Email    : " + email[index]);
         System.out.println("Username : " + usern[index]);
         System.out.println("Password : " + passw[index]);
+        
     }
 }
