@@ -89,9 +89,13 @@ public class SwitchCase {
                 System.out.println("August " + date + " ," + year);
                 break;
             case 9:
-                System.out.println("September " + date + "," + year);
+                System.out.println("September " + date + ", " + year);
                 break;
-            
+            case 10:
+                System.out.println("October " + date + ", " + year);
+                break;
+            case 11:
+                
         }
 
     }
