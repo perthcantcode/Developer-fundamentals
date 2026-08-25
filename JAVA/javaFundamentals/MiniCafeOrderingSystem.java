@@ -7,6 +7,12 @@ public class MiniCafeOrderingSystem {
         double money = 10.00;
         boolean isOpen = true;
 
-        Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Welcome to the Mini Cafe!");
+
+        while(isOpen){
+            
+        }
     }
 }
