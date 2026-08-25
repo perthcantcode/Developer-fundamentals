@@ -17,7 +17,10 @@ public class MiniCafeOrderingSystem {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                
+                case 4:
+                    isOpen = false;
+                    System.out.println("Thanks for visiting!");
+                    break;
             }
 
         }
