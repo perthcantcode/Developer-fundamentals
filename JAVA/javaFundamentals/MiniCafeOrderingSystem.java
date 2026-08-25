@@ -15,6 +15,14 @@ public class MiniCafeOrderingSystem {
             System.out.println("\nMenu: 1. Coffee ($3) | 2. Snack | 3. Check Wallet | 4. Leave");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
+
+            switch (choice) {
+                
+            }
+
         }
+
+
+
     }
 }
