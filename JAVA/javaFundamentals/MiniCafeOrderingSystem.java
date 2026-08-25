@@ -53,6 +53,9 @@ public class MiniCafeOrderingSystem {
                     isOpen = false;
                     System.out.println("Thanks for visiting!");
                     break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
+                    break;
             }
 
         }
