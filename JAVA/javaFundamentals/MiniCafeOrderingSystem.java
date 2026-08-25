@@ -17,6 +17,9 @@ public class MiniCafeOrderingSystem {
             int choice = scanner.nextInt();
 
             switch (choice) {
+                case 3:
+                    System.out.println("You have $" + money + " left.");
+                    break;
                 case 4:
                     isOpen = false;
                     System.out.println("Thanks for visiting!");
