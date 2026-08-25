@@ -17,6 +17,14 @@ public class MiniCafeOrderingSystem {
             int choice = scanner.nextInt();
 
             switch (choice) {
+                case 1:
+                    if (money >= 3.0) {
+                        money = money - 3.0;
+                        System.out.println("You bought a Coffee. Enjoy!");
+                    } else {
+                        System.out.println("Not enough money for Coffee.");
+                    }
+                    break;
                 case 3:
                     System.out.println("You have $" + money + " left.");
                     break;
