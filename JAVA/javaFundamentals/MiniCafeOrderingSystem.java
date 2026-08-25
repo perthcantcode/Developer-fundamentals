@@ -25,6 +25,11 @@ public class MiniCafeOrderingSystem {
                         System.out.println("Not enough money for Coffee.");
                     }
                     break;
+                case 2:
+                    System.out.print("Which snack? 1. Donut ($2) | 2. Muffin ($4): ");
+                    int snackChoice = scanner.nextInt();
+                    double snackPrice = 0.0;
+                    break; // We will add more to this case next
                 case 3:
                     System.out.println("You have $" + money + " left.");
                     break;
