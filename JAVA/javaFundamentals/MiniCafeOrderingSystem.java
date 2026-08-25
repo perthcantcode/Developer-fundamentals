@@ -29,6 +29,16 @@ public class MiniCafeOrderingSystem {
                     System.out.print("Which snack? 1. Donut ($2) | 2. Muffin ($4): ");
                     int snackChoice = scanner.nextInt();
                     double snackPrice = 0.0;
+                    
+                    if (snackChoice == 1) {
+                        snackPrice = 2.0;
+                    } else if (snackChoice == 2) {
+                        snackPrice = 4.0;
+                    } else {
+                        System.out.println("We don't have that snack.");
+                        break; // Exits the switch case early
+                    }
+
                     break; // We will add more to this case next
                 case 3:
                     System.out.println("You have $" + money + " left.");
