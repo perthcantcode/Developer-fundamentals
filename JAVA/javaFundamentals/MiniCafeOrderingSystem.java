@@ -56,11 +56,11 @@ public class MiniCafeOrderingSystem {
                 default:
                     System.out.println("Invalid choice. Try again.");
                     break;
-            }
+            }// end of switch
 
-        }
+        }//end of while loop
 
 
-
+        scanner.close();
     }
 }
