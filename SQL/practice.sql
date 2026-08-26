@@ -29,3 +29,6 @@ SELECT * FROM students;
 SELECT first_name, email FROM students;
 
 SELECT * FROM students WHERE age > 20;
+
+SELECT * FROM students WHERE age >= 20 AND first_name = 'Alice';
+
