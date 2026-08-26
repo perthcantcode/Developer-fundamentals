@@ -16,3 +16,6 @@ DESCRIBE students;
 ALTER TABLE students ADD COLUMN email VARCHAR(100);
 
 DROP TABLE IF EXISTS temporary_table;
+
+INSERT INTO students (first_name, last_name, age, email) 
+VALUES ('Alice', 'Smith', 20, 'alice@example.com');
