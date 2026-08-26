@@ -27,3 +27,5 @@ INSERT INTO students (first_name, last_name, age, email) VALUES
 SELECT * FROM students;
 
 SELECT first_name, email FROM students;
+
+SELECT * FROM students WHERE age > 20;
