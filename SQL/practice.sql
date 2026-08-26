@@ -11,3 +11,4 @@ CREATE TABLE  students (
     age INT
 );
 
+DESCRIBE students;
