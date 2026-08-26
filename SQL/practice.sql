@@ -23,3 +23,5 @@ VALUES ('Alice', 'Smith', 20, 'alice@example.com');
 INSERT INTO students (first_name, last_name, age, email) VALUES 
 ('Bob', 'Jones', 22, 'bob@example.com'),
 ('Charlie', 'Brown', 19, 'charlie@example.com');
+
+SELECT * FROM students;
