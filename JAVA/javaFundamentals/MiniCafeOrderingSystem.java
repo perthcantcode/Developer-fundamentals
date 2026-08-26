@@ -57,9 +57,9 @@ public class MiniCafeOrderingSystem {
                     System.out.println("Invalid choice. Try again.");
                     break;
             }// end of switch
+            // idk who I am without my siblings..
 
         }//end of while loop
-
 
         scanner.close();
     }
