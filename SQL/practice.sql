@@ -32,3 +32,4 @@ SELECT * FROM students WHERE age > 20;
 
 SELECT * FROM students WHERE age >= 20 AND first_name = 'Alice';
 
+SELECT * FROM  students ORDER BY age DESC;
