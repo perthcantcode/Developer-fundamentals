@@ -28,6 +28,8 @@ public class TaskEmployer {
                 if (numEmp < 0){
                     System.out.println("Please enter a non-negative number.");
                 }
+            }catch(NumberFormatException e){
+                System.out.println("That's not a valid number. Please try again !");
             }
         }
 
