@@ -18,21 +18,26 @@ public class TaskEmployer {
     }
 
     public static void manageEmployees(Scanner input, String[] tasks){
-        int numEmp = -1;
+        int numEmployees = -1;
 
-        while(numEmp < 0){
+        while(numEmployees < 0){
             System.out.println("Enter number of employees: ");
             String raw = input.nextLine().trim();
             try {
-                numEmp = Integer.parseInt(raw);
-                if (numEmp < 0){
+                numEmployees = Integer.parseInt(raw);
+                if (numEmployees < 0){
                     System.out.println("Please enter a non-negative number.");
                 }
             }catch(NumberFormatException e){
                 System.out.println("That's not a valid number. Please try again !");
             }
         }
-
     }
+
+    String[] employeeNames = new String[numEmployees];
+    String[] assignedTasks = new String[numEmployees];
+
+    
+
 
 }
