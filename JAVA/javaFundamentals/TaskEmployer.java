@@ -37,7 +37,17 @@ public class TaskEmployer {
     String[] employeeNames = new String[numEmployees];
     String[] assignedTasks = new String[numEmployees];
 
-    
+    for( int i = 0;  i < numEmployees;  i++){
+        System.out.println("Enter name of employee " + (i + 1) + ": ");
+        employeeNames[i] = inpt.nextLine().trim();
+
+        String chosenTask = null;
+        while(chosenTask == null) {
+            System.out.println("Assign a task to " + employeeNames[i]
+            + "(must match one from the list above): ") ;
+            String input = inpt.nextLine().trim();
+        }
+    }
 
 
 }
