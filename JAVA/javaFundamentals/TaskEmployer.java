@@ -22,7 +22,7 @@ public class TaskEmployer {
 
         while(numEmployees < 0){
             System.out.println("Enter number of employees: ");
-            String raw = input.nextLine().trim();
+            String raw = inpt.nextLine().trim();
             try {
                 numEmployees = Integer.parseInt(raw);
                 if (numEmployees < 0){
@@ -46,7 +46,12 @@ public class TaskEmployer {
             System.out.println("Assign a task to " + employeeNames[i]
             + "(must match one from the list above): ") ;
             String input = inpt.nextLine().trim();
+            chosenTask = findTasks(tasks, input);
+            if(chosenTask == null){
+                System.out.println("Invalid Task. Please choose one from the predefined list.");
+            }
         }
+        assignedTasks[i] = chosenTask;
     }
 
 
