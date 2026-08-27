@@ -7,6 +7,14 @@ public class TaskEmployer {
 
 
     }
-    
+
+    public static String findTasks(String[] tasks, String task){
+        for (String t : tasks){
+            if(t.equalsIgnoreCase(task)){
+                return t;
+            }
+        }
+        return null;
+    }
 
 }
