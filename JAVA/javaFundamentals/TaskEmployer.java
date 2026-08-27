@@ -17,4 +17,20 @@ public class TaskEmployer {
         return null;
     }
 
+    public static void manageEmployees(Scanner input, String[] tasks){
+        int numEmp = -1;
+
+        while(numEmp < 0){
+            System.out.println("Enter number of employees: ");
+            String raw = input.nextLine().trim();
+            try {
+                numEmp = Integer.parseInt(raw);
+                if (numEmp < 0){
+                    System.out.println("Please enter a non-negative number.");
+                }
+            }
+        }
+
+    }
+
 }
