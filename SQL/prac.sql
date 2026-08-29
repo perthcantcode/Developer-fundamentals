@@ -68,3 +68,11 @@ SELECT first_name, salary
 FROM employees 
 ORDER BY salary DESC 
 LIMIT 2;
+
+-- 11. AGGREGATE FUNCTIONS
+-- Performs calculations on multiple rows to return a single value.
+SELECT 
+    COUNT(emp_id) AS total_employees,
+    AVG(salary) AS average_salary,
+    MAX(salary) AS highest_salary 
+FROM employees;
