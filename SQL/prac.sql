@@ -49,3 +49,8 @@ FROM employees;
 SELECT first_name, salary 
 FROM employees 
 WHERE salary > 80000;
+
+-- 8. MULTIPLE CONDITIONS (AND / OR)
+-- Combines multiple criteria for filtering.
+SELECT * FROM employees 
+WHERE dept_id = 1 AND hire_date > '2021-12-31';
