@@ -43,3 +43,9 @@ SELECT * FROM employees;
 -- Gives a column or table a temporary, readable name for the output.
 SELECT first_name AS "First Name", last_name AS "Last Name" 
 FROM employees;
+
+-- 7. FILTERING DATA (WHERE)
+-- Retrieves only the rows that meet a specific condition.
+SELECT first_name, salary 
+FROM employees 
+WHERE salary > 80000;
