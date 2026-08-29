@@ -89,3 +89,10 @@ SELECT dept_id, AVG(salary) AS avg_dept_salary
 FROM employees 
 GROUP BY dept_id 
 HAVING AVG(salary) > 80000;
+
+-- 14. JOINING TABLES (INNER JOIN)
+-- Combines rows from two or more tables based on a related column.
+SELECT employees.first_name, departments.dept_name 
+FROM employees
+INNER JOIN departments 
+    ON employees.dept_id = departments.dept_id;
