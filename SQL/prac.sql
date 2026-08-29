@@ -54,3 +54,9 @@ WHERE salary > 80000;
 -- Combines multiple criteria for filtering.
 SELECT * FROM employees 
 WHERE dept_id = 1 AND hire_date > '2021-12-31';
+
+-- 9. SORTING RESULTS (ORDER BY)
+-- Sorts the output in ascending (ASC) or descending (DESC) order.
+SELECT first_name, salary 
+FROM employees 
+ORDER BY salary DESC;
