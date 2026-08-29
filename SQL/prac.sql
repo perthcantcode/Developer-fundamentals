@@ -106,3 +106,14 @@ WHERE emp_id = 101;
 
 DELETE FROM employees 
 WHERE emp_id = 104;
+
+-- 16. SUBQUERIES (NESTED QUERIES)
+-- A query nested inside another query. The inner query runs first, 
+-- and its result is used by the outer main query as a condition.
+
+SELECT first_name, last_name, salary
+FROM employees
+WHERE salary > (
+    -- This inner query calculates the overall average salary first
+    SELECT AVG(salary) FROM employees
+);
