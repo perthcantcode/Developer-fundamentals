@@ -38,3 +38,8 @@ VALUES
     -- 5. BASIC SELECT
 -- Retrieves specific columns (or all columns using *) from a table.
 SELECT * FROM employees;
+
+-- 6. ALIASING (AS)
+-- Gives a column or table a temporary, readable name for the output.
+SELECT first_name AS "First Name", last_name AS "Last Name" 
+FROM employees;
