@@ -96,3 +96,13 @@ SELECT employees.first_name, departments.dept_name
 FROM employees
 INNER JOIN departments 
     ON employees.dept_id = departments.dept_id;
+
+    -- 15. UPDATE & DELETE
+-- Modifies existing records (UPDATE) and removes records (DELETE).
+-- IMPORTANT: Always use a WHERE clause to avoid affecting all rows!
+UPDATE employees 
+SET salary = 88000.00 
+WHERE emp_id = 101;
+
+DELETE FROM employees 
+WHERE emp_id = 104;
