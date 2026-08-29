@@ -76,3 +76,16 @@ SELECT
     AVG(salary) AS average_salary,
     MAX(salary) AS highest_salary 
 FROM employees;
+
+-- 12. GROUPING DATA (GROUP BY)
+-- Groups rows that have the same values into summary rows.
+SELECT dept_id, COUNT(*) AS employee_count 
+FROM employees 
+GROUP BY dept_id;
+
+-- 13. FILTERING GROUPS (HAVING)
+-- Like WHERE, but used specifically to filter grouped records.
+SELECT dept_id, AVG(salary) AS avg_dept_salary
+FROM employees 
+GROUP BY dept_id 
+HAVING AVG(salary) > 80000;
