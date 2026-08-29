@@ -60,3 +60,11 @@ WHERE dept_id = 1 AND hire_date > '2021-12-31';
 SELECT first_name, salary 
 FROM employees 
 ORDER BY salary DESC;
+
+-- 10. LIMITING RESULTS (LIMIT)
+-- Restricts the number of rows returned (great for "Top N" queries).
+-- Note: 'LIMIT' is used in Postgres/MySQL; SQL Server uses 'TOP'.
+SELECT first_name, salary 
+FROM employees 
+ORDER BY salary DESC 
+LIMIT 2;
