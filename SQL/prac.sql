@@ -34,3 +34,7 @@ VALUES
     (102, 'Bob', 'Johnson', '2021-03-10', 78000.50, 1),
     (103, 'Charlie', 'Brown', '2023-06-01', 65000.00, 2),
     (104, 'Diana', 'Prince', '2020-11-20', 92000.00, 3);
+
+    -- 5. BASIC SELECT
+-- Retrieves specific columns (or all columns using *) from a table.
+SELECT * FROM employees;
