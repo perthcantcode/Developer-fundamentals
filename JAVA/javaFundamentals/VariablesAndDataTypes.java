@@ -7,8 +7,8 @@ public class VariablesAndDataTypes {
         String name ="Ruperth";
         boolean isHandsome = false;
         int num = 28;
-        float grade = 99.9f; //need f sa dulo para maindicate
-        double grade1 = 93.25f; // yung float pwede maging double pero yung double bawal maging float
+        //float grade = 99.9f; //need f sa dulo para maindicate
+        //double grade1 = 93.25f; // yung float pwede maging double pero yung double bawal maging float
 
         //Reassigning variable syntax
         //Don't forget semi colon very crucial (;)

@@ -16,7 +16,6 @@ public class Arrays {
         employeeNames[2] = "Erich";
         employeeNames[3] = "Ruperth";
         employeeNames[4] = "Vesina";
-        int evenNum[] = new int[10];
 
         // //how to read and write or ACCESS the arrays (0-...n-1)
         //0 starting point and n-1 end point
@@ -49,5 +48,6 @@ public class Arrays {
         System.out.println("Username : " + usern[index]);
         System.out.println("Password : " + passw[index]);
         
+        s.close();
     }
 }

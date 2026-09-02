@@ -99,6 +99,7 @@ public class Methods {
 
         int result = summation(numbers); // no need na gawing summation(numbers[]);
         System.out.println("Result  : " + result);
+        scan.close();
 
     }
 
@@ -199,5 +200,7 @@ public class Methods {
 
         return sum; // ito need ma return or output
     }
+
+
 
 }
