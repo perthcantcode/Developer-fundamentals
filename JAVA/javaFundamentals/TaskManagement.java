@@ -70,7 +70,7 @@ public class TaskManagement {
 
         System.out.println("===== MEMBERS TASK ASSIGNMENTS =====");
         for(int i = 0; i < numMember; i++){
-            System.out.println(memberNames[i] + " ay inuutsan na "+ assignedGawain[i]);
+            System.out.println(memberNames[i] + " ay inuutsan na mag "+ assignedGawain[i]);
         }
 
     }
