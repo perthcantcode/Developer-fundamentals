@@ -89,7 +89,7 @@ public class GradeCalculator {
                 result = "Highest Honors";
             }
 
-            System.out.println("\n===== RESULT FOR " + studName + " =====");
+            System.out.println("\n=====" + studName +  "'s GRADE RESULTS  =====");
             System.out.print(grades);
             System.out.printf("Average: %.2f%n", averageGrade);
             System.out.println("Status: " + result + "\n");
