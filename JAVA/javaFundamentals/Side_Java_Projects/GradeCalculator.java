@@ -93,7 +93,7 @@ public class GradeCalculator {
                 System.out.printf("%s: %.2f%n", subjectNames[j], grades[j]);
             }
             System.out.printf("Average: %.2f%n", averageGrade);
-            System.out.println("Status: " + result + "\n");
+            System.out.println("Status: " + result);
         }
 
         scan.close();
