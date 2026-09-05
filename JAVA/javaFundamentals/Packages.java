@@ -13,7 +13,9 @@ public class Packages {
             System.out.println("Enter your age: ");
             int age = scan.nextInt();
 
-            System.out.println("Your age is: " + age)
+            System.out.println("Your age is: " + age);
+        }catch{
+            System.out.println("Please enter a whole number.");
         }
 
 
