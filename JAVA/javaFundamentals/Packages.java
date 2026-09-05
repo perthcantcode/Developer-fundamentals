@@ -8,18 +8,25 @@ import java.util.Scanner;
 public class Packages {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        boolean validInput = false;
 
-        try {
-            System.out.print("Enter your age: ");
-            int age = scan.nextInt();
+        while(validInput){
+            try {
+                System.out.print("Enter your age: ");
+                int age = scan.nextInt();
 
-            System.out.println("Your age is: " + age);
-        } catch (InputMismatchException e){
-            System.out.println("Please enter a whole number.");
-        }finally{
-            scan.close();
-            System.out.println("Program finished");
+                System.out.println("Your age is: " + age);
+                validInput = true;
+            } catch (InputMismatchException e){
+                System.out.println("Invalid Input ! Please enter a valid Integer.");
+                scan.nextLine();
+            }finally{
+                System.out.println(" === This runs after every attempt. === ");
+            }
+                scan.close();
+                System.out.println("Program finished");
         }
+    
 
 
     }
