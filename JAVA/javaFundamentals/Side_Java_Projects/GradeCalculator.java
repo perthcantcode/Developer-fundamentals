@@ -49,11 +49,13 @@ public class GradeCalculator {
             }
 
             double totalGrade = 0;
-            StringBuilder grades = new StringBuilder();
+            String[] subjectNames = new String[subCount];
+            double[] grades = new double[subCount];
 
             for(int j = 0; j < subCount; j++ ){
                 System.out.print("Enter subject " + (j + 1) + " name: ");
                 String subName = scan.nextLine();
+                subjectNames[j] = subName;
 
                 double subGrade;
                 do {
@@ -66,10 +68,7 @@ public class GradeCalculator {
                 scan.nextLine();
 
                 totalGrade += subGrade;
-                grades.append(subName)
-                        .append(": ")
-                        .append(String.format("%.2f", subGrade))
-                        .append(System.lineSeparator());
+                grades[j] = subGrade;
             }
 
             double averageGrade = totalGrade / subCount;
@@ -90,7 +89,9 @@ public class GradeCalculator {
             }
 
             System.out.println("\n=====" + studName +  "'s GRADE RESULTS  =====");
-            System.out.print(grades);
+            for (int j = 0; j < subCount; j++) {
+                System.out.printf("%s: %.2f%n", subjectNames[j], grades[j]);
+            }
             System.out.printf("Average: %.2f%n", averageGrade);
             System.out.println("Status: " + result + "\n");
         }
