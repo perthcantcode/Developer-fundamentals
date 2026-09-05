@@ -39,8 +39,28 @@ public class GradeCalculator {
             System.out.print("Enter number of subjects for " + studName + ":");
             int subCount = scan.nextInt();
             scan.nextLine();
+
             if(subCount <= 0){
                 System.out.println("Invalid number of subjects ! Try Again.");
+                System.out.print("Enter number of subjects for " + studName + ": ");
+                subCount = scan.nextInt();
+                scan.nextLine();
+            }else{
+                for(int j = 0; j <  subCount; j++ ){
+                    System.out.print("Enter  subject " + (j+1) + " name: ") ;
+                    String subName = scan.nextLine();
+
+                    System.out.print("Enter subject grade: ");
+                    Double subGrade = scan.nextDouble(); scan.nextLine();
+
+                    if(subGrade < 0 || subGrade > 100){
+                        System.out.println("Invalid grade! Must be between 0 and 100.");
+                        System.out.print("Enter subject grade: ");
+                        subGrade = scan.nextDouble();
+                    }
+                }
+
+                
             }
 
         }
