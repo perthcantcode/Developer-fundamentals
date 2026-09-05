@@ -7,6 +7,18 @@ import java.util.Scanner;
 
 public class Packages {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        try {
+            System.out.println("Enter your age: ");
+            int age = scan.nextInt();
+
+            System.out.println("Your age is: " + age)
+        }
+
+
+    }
+    /*public static void main(String[] args) {
         basicTryCatch();
         multipleCatchBlocks();
         tryCatchFinally();
@@ -88,4 +100,6 @@ public class Packages {
 
         System.out.println("Age is valid.");
     }
+
+    */
 }
