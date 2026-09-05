@@ -20,7 +20,7 @@ public class GradeCalculator {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("===== STUDENT GRADE CALCULATOR =====");
+        System.out.println("===== COLLEGE GRADE CALCULATOR =====");
         System.out.print("How many students: ");
         int studCount = scan.nextInt();
         scan.nextLine();
@@ -61,10 +61,10 @@ public class GradeCalculator {
                 do {
                     System.out.print("Enter " + subName + " grade: ");
                     subGrade = scan.nextDouble();
-                    if (Double.isNaN(subGrade) || subGrade < 0 || subGrade > 100) {
-                        System.out.println("Invalid grade! Enter a value from 0 to 100.");
+                    if (!isValidCollegeGrade(subGrade)) {
+                        System.out.println("Invalid grade! Use 1.00, 1.25, 1.50 ... up to 5.00.");
                     }
-                } while(Double.isNaN(subGrade) || subGrade < 0 || subGrade > 100);
+                } while(!isValidCollegeGrade(subGrade));
                 scan.nextLine();
 
                 totalGrade += subGrade;
@@ -74,18 +74,18 @@ public class GradeCalculator {
             double averageGrade = totalGrade / subCount;
             String result;
 
-            if (averageGrade < 0 || averageGrade > 100 || Double.isNaN(averageGrade)) {
+            if (Double.isNaN(averageGrade) || averageGrade < 1.00 || averageGrade > 5.00) {
                 result = "Invalid";
-            } else if (averageGrade < 75) {
-                result = "Failed";
-            } else if (averageGrade < 90) {
+            } else if (averageGrade <= 1.25) {
+                result = "Summa Cum Laude";
+            } else if (averageGrade <= 1.75) {
+                result = "Magna Cum Laude";
+            } else if (averageGrade <= 2.25) {
+                result = "Cum Laude";
+            } else if (averageGrade <= 3.00) {
                 result = "Passed";
-            } else if (averageGrade < 95) {
-                result = "With Honors";
-            } else if (averageGrade < 98) {
-                result = "High Honors";
             } else {
-                result = "Highest Honors";
+                result = "Failed";
             }
 
             System.out.println("\n=====" + studName +  "'s GRADE RESULTS  =====");
@@ -97,5 +97,14 @@ public class GradeCalculator {
         }
 
         scan.close();
+    }
+
+    private static boolean isValidCollegeGrade(double grade) {
+        if (Double.isNaN(grade) || grade < 1.00 || grade > 5.00) {
+            return false;
+        }
+
+        double quarterStep = (grade - 1.00) * 4;
+        return Math.abs(quarterStep - Math.round(quarterStep)) < 0.000001;
     }
 }
