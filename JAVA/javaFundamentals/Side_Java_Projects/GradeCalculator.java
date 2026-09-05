@@ -27,46 +27,74 @@ public class GradeCalculator {
 
         while(studCount <= 0){
             System.out.println("Invalid number of students! ");
-            System.out.print("How many students: ");
+            System.out.print("How many students     : ");
             studCount = scan.nextInt();
             scan.nextLine();
         }
 
         for(int i = 0; i < studCount; i++ ){
-            System.out.print("Enter name of student " + (i+1)+  ".) " );
+            System.out.println("===== STUDENT " + (i+1) + " =====");
+            System.out.print("Enter student name       :  " );
             String studName = scan.nextLine();
 
-            System.out.print("Enter number of subjects for " + studName + ":");
-            int subCount = scan.nextInt();
-            scan.nextLine();
+            System.out.print("Enter number of subjects :  ");
+            int subCount = scan.nextInt();scan.nextLine();
+            System.out.println();
 
-            if(subCount <= 0){
-                System.out.println("Invalid number of subjects ! Try Again.");
-                System.out.print("Enter number of subjects for " + studName + ": ");
+            while(subCount <= 0){
+                System.out.println("Invalid number of subjects! Try again.");
+                System.out.print("Enter number of subjects: ");
                 subCount = scan.nextInt();
                 scan.nextLine();
-            }else{
-                for(int j = 0; j <  subCount; j++ ){
-                    System.out.print("Enter  subject " + (j+1) + " name: ") ;
-                    String subName = scan.nextLine();
-
-                    System.out.print("Enter subject grade: ");
-                    Double subGrade = scan.nextDouble(); scan.nextLine();
-
-                    if(subGrade < 0 || subGrade > 100){
-                        System.out.println("Invalid grade! Must be between 0 and 100.");
-                        System.out.print("Enter subject grade: ");
-                        subGrade = scan.nextDouble();
-                    }
-                }
-
-                
             }
 
-        }
-        
-        
-    
+            double totalGrade = 0;
+            StringBuilder grades = new StringBuilder();
 
+            for(int j = 0; j < subCount; j++ ){
+                System.out.print("Enter subject " + (j + 1) + " name: ");
+                String subName = scan.nextLine();
+
+                double subGrade;
+                do {
+                    System.out.print("Enter " + subName + " grade: ");
+                    subGrade = scan.nextDouble();
+                    if (Double.isNaN(subGrade) || subGrade < 0 || subGrade > 100) {
+                        System.out.println("Invalid grade! Enter a value from 0 to 100.");
+                    }
+                } while(Double.isNaN(subGrade) || subGrade < 0 || subGrade > 100);
+                scan.nextLine();
+
+                totalGrade += subGrade;
+                grades.append(subName)
+                        .append(": ")
+                        .append(String.format("%.2f", subGrade))
+                        .append(System.lineSeparator());
+            }
+
+            double averageGrade = totalGrade / subCount;
+            String result;
+
+            if (averageGrade < 0 || averageGrade > 100 || Double.isNaN(averageGrade)) {
+                result = "Invalid";
+            } else if (averageGrade < 75) {
+                result = "Failed";
+            } else if (averageGrade < 90) {
+                result = "Passed";
+            } else if (averageGrade < 95) {
+                result = "With Honors";
+            } else if (averageGrade < 98) {
+                result = "High Honors";
+            } else {
+                result = "Highest Honors";
+            }
+
+            System.out.println("\n===== RESULT FOR " + studName + " =====");
+            System.out.print(grades);
+            System.out.printf("Average: %.2f%n", averageGrade);
+            System.out.println("Status: " + result + "\n");
+        }
+
+        scan.close();
     }
 }
