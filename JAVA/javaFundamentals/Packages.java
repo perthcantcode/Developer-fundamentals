@@ -10,12 +10,15 @@ public class Packages {
         Scanner scan = new Scanner(System.in);
 
         try {
-            System.out.println("Enter your age: ");
+            System.out.print("Enter your age: ");
             int age = scan.nextInt();
 
             System.out.println("Your age is: " + age);
-        }catch{
+        } catch (InputMismatchException e){
             System.out.println("Please enter a whole number.");
+        }finally{
+            scan.close();
+            System.out.println("Program finished");
         }
 
 
