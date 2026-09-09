@@ -9,7 +9,7 @@ public class IrregularStudent extends RegularStudent {
 
     }
 
-    public void LimitTask(Task LimitTask){
+    public void LimitTask(Task task){
 
         Task assignedTask = super.getTask();
 

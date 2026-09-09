@@ -1,5 +1,5 @@
 package Inheritance;
-
+import java.util.Scanner;
 /*
     Problem: Develop a simple Student Management System to help 
     manage information about students and their academic status
@@ -15,7 +15,25 @@ package Inheritance;
 public class StudentManagementSys {
     public static void main (String[] args){
 
-        Task t1 = new Task("DCIT50 Java Programming", "Learn JAVA OOP Inheritance");
+        Scanner scan = new Scanner(System.in);
+
+        Task t1 = new Task("DCIT50 ", "Learn OOP");
+        Task t2 = new Task("COSC100", "Learn Automata");
+        Task t3 = new Task("DCIT23 " ,  "Learn Java Programming");
+        Task t4 = new Task("COSC80", "Learn Operating Systems" );
+
+        RegularStudent rs1 = new RegularStudent("S001", "Ruperth", "BSCS", "2nd Year", t1);
+        RegularStudent rs2 = new RegularStudent("S002", "Erich", "BSECON", "2nd Year", t2);
+        RegularStudent rs3 = new RegularStudent("S003", "Julian", "BSIT", "2nd Year", t3);
+        RegularStudent rs4 = new RegularStudent("S004", "Jj", "BSCS", "4th Year", t4);
+
+        IrregularStudent irs1 = new IrregularStudent("S005", "Macci", "BSCS", "2nd Year", t2);
+
+
+
+
+        /*
+            Task t1 = new Task("DCIT50 Java Programming", "Learn JAVA OOP Inheritance");
 
         String studNum = "251011645";
         String name = "Ruperth";
@@ -36,6 +54,8 @@ public class StudentManagementSys {
         System.out.println("==========================");
         //Child Class #!
         System.out.println(rs1.toString());
+         */
+    
 
 
 
