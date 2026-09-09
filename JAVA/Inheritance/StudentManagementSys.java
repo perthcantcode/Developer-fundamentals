@@ -26,12 +26,13 @@ public class StudentManagementSys {
 
         Student s1 =   new Student (studNum, name, course, yearLevel);
 
-        System.out.println(s1);
-        s1.toString();
+        //System.out.println(s1);
+        //s1.toString();
         // OUTPUT: Inheritance.Student@251a69d7
         //It gives the string of the whole project or object
 
-        
+        System.out.println(s1.toString());
+
 
 
     }
