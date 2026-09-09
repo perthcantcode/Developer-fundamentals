@@ -4,12 +4,12 @@ public class ScholarStudent extends RegularStudent {
 
     //need may maintaining grade
     private int maintainGrade = 85;
+
     private String scholarName;
 
-
-    public ScholarStudent(String studNum, String name, String course, String yearLevel, Task task) {
-        super(studNum, name, course, yearLevel, task);
-        this.scholarName = name;
+    public ScholarStudent(String studNum, String name, String course, String yearLevel, Task task, String scholarName) {
+        super(studNum, name, course, yearLevel, task); // dapat match argument neto sa RegularStudent class unless i add mismo new  var
+        this.scholarName = scholarName;
     }
 
     public void checkMaintainGrade(int grade){

@@ -24,11 +24,13 @@ public class StudentManagementSys {
 
         RegularStudent rs1 = new RegularStudent("S001", "Ruperth", "BSCS", "2nd Year", t1);
         RegularStudent rs2 = new RegularStudent("S002", "Erich", "BSECON", "2nd Year", t2);
-        RegularStudent rs3 = new RegularStudent("S003", "Julian", "BSIT", "2nd Year", t3);
-        RegularStudent rs4 = new RegularStudent("S004", "Jj", "BSCS", "4th Year", t4);
-
-        IrregularStudent irs1 = new IrregularStudent("S005", "Macci", "BSCS", "2nd Year", t2);
-
+        IrregularStudent irs1 = new IrregularStudent("S003", "Macci", "BSIT", "2nd Year", t2);
+        ScholarStudent ss1 = new ScholarStudent("S004", "Doflamingming", "BSCATZ", "4th Year", t2, "Mingo");
+        
+        System.out.println("List of Students:");
+        System.out.println(rs2.toString());
+        System.out.println(ss1.toString());
+        System.out.println(irs1.toString());
 
 
 
