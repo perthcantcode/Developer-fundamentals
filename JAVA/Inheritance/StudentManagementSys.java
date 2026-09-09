@@ -15,9 +15,7 @@ package Inheritance;
 public class StudentManagementSys {
     public static void main (String[] args){
 
-        /*
-
-            */
+        Task t1 = new Task("DCIT50 Java Programming", "Learn JAVA OOP Inheritance");
 
         String studNum = "251011645";
         String name = "Ruperth";
@@ -25,13 +23,19 @@ public class StudentManagementSys {
         String yearLevel = "2nd Year";
 
         Student s1 =   new Student (studNum, name, course, yearLevel);
+        RegularStudent rs1 = new RegularStudent (studNum, name, course, yearLevel, t1);
 
         //System.out.println(s1);
         //s1.toString();
         // OUTPUT: Inheritance.Student@251a69d7
         //It gives the string of the whole project or object
 
+          //Parent Class
         System.out.println(s1.toString());
+
+        System.out.println("==========================");
+        //Child Class #!
+        System.out.println(rs1.toString());
 
 
 
