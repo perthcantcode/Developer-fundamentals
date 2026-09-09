@@ -10,9 +10,15 @@ public class IrregularStudent extends RegularStudent {
     }
 
     public void LimitTask(Task LimitTask){
-        if(super.getTask().getTaskName().contains("COSC")) System.out.println("Task is Unavailable for Irregular Students");
-        else System.out.println("Removing Task: " + super.getTask().getTaskName());
-        super.getTask();
+
+        Task assignedTask = super.getTask();
+
+        if(super.getTask().getTaskName().contains("COSC")){
+            System.out.println("Task is Unavailable for Irregular Students");
+            System.out.println("Removing Task: " + super.getTask().getTaskName());
+            //super.getTask(); // bawal super.getTask() = null;
+            assignedTask = null;
+        }
 
     }
 
