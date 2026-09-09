@@ -13,7 +13,7 @@ public class Student {
     private String yearLevel;
     
 
-    
+
     //new Student(studNum, name, course, yearLevel);
     public Student(String studNum, String name, String course, String yearLevel){
         this.studNum = studNum;
@@ -22,5 +22,14 @@ public class Student {
         this.yearLevel = yearLevel;
     }
 
+    @Override 
+    public String toString() {
+        return "\n===== STUDENT INFORMATION =====" 
+            + "\nStudent Number: " + this.studNum 
+            + "\nStudent Name  : " + this.name
+            + "\nCourse        : " + this.course
+            + "\nYear Level  : " + this.yearLevel;
+
+    }
 
 }

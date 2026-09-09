@@ -15,12 +15,24 @@ package Inheritance;
 public class StudentManagementSys {
     public static void main (String[] args){
 
-       /* */ String studNum = "251011645";
+        /*
+
+            */
+
+        String studNum = "251011645";
         String name = "Ruperth";
         String course = "BSCS'";
         String yearLevel = "2nd Year";
 
         Student s1 =   new Student (studNum, name, course, yearLevel);
+
+        System.out.println(s1);
+        s1.toString();
+        // OUTPUT: Inheritance.Student@251a69d7
+        //It gives the string of the whole project or object
+
+        
+
 
     }
 
