@@ -11,6 +11,17 @@ public class RegularStudent  extends Student{
         this.task = task;
     }
 
+
+    //method na for reg students only
+    public void updateTask(Task task){
+        this.task = task;
+    }
+
+    public Task getTask(){
+        return this.task;
+    }
+
+
     @Override
     public String toString(){
         return "\n===== REGULAR STUDENT INFORMATION ====="
@@ -19,7 +30,6 @@ public class RegularStudent  extends Student{
             +"\n Course: " + super.getCourse()
             +"\n Year Level: " + super.getYearLevel() + "\n"
             + task.toString();
-
     }
 
 }
