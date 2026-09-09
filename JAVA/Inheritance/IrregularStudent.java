@@ -8,6 +8,23 @@ public class IrregularStudent extends RegularStudent {
         super(studNum, name, course, yearLevel, task);
 
     }
+
+    public void LimitTask(Task LimitTask){
+        if(super.getTask().getTaskName().contains("COSC")) System.out.println("Task is Unavailable for Irregular Students");
+        else System.out.println("Removing Task: " + super.getTask().getTaskName());
+        super.getTask();
+
+    }
+
+    @Override
+    public String toString(){
+        return "\n===== IRREGULAR STUDENT INFORMATION ====="
+            +"\n Student Number: " + super.getStudNum()
+            + "\n Student Name: " + super.getName()
+            +"\n Course: " + super.getCourse()
+            +"\n Year Level: " + super.getYearLevel() + "\n"
+            + super.getTask().toString();
+    }
     
 
 }

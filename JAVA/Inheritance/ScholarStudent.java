@@ -19,7 +19,7 @@ public class ScholarStudent extends RegularStudent {
 
     @Override
     public String toString(){
-        return "\n===== REGULAR STUDENT INFORMATION ====="
+        return "\n===== SCHOLAR STUDENT INFORMATION ====="
             +"\n Student Number: " + super.getStudNum()
             + "\n Student Name: " + super.getName()
             +"\n Course: " + super.getCourse()
